@@ -1,6 +1,4 @@
 let img1;
-let img2;
-let img3;
 let img4;
 let img5;
 let img6;
@@ -13,11 +11,23 @@ let img12;
 let img13;
 let img14;
 let img15;
+let header;
+let eugenia;
+let drugs;
+let euphoria;
+let gecs;
+let christianity;
+let cryptocussy;
+let missouri;
+let government;
+let stinky;
+let dragons;
+let brady;
+let gay;
+let kanye;
 
 function preload(){
-  img1 = createImg('https://im-media.voltron.voanews.com/Drupal/01live-166/styles/sourced/s3/2019-04/CEC3703B-15A2-4742-9F47-10B808EF0D0F.jpg?itok=LChGT984', 'decrepid prince philip');
-  img2 = createImg('http://24.media.tumblr.com/00f171c160f4a552f8ca90002989744a/tumblr_mm0lmeeFFZ1qe1uqko1_500.gif', 'sparkle');
-  img3 = createImg('http://24.media.tumblr.com/00f171c160f4a552f8ca90002989744a/tumblr_mm0lmeeFFZ1qe1uqko1_500.gif', 'sparkle');
+  img1 = createImg('https://i.imgur.com/kHagEFR.jpg', 'eugenia cooney');
   img4 = createImg('https://klyker.com/wp-content/uploads/2015/07/woman-with-insane-body-modifications-6.jpg', 'dylan brady');
   img5 = createImg('http://i.huffpost.com/gen/498220/thumbs/r-KETAMINE-DRUG-METHOXETAMINE-large570.jpg', 'ketamine');
   img6 = createImg('https://tse4.mm.bing.net/th?id=OIP.k2h1nuwwus-yIgySuVt2kwHaEK&pid=Api&P=0&w=302&h=169', 'euphoria');
@@ -30,180 +40,65 @@ function preload(){
   img13 = createImg('https://www.georgianjournal.ge/images/georgianews/2018/March/culture/imagine5.jpg', 'imagine dragons');
   img14 = createImg('https://tse2.mm.bing.net/th?id=OIP.M9gK090xkEqjzcqm9O19FgHaEK&pid=Api&P=0&w=295&h=166', 'scientology');
   img15 = createImg('https://images.gmanews.tv/webpics/2020/07/2020-07-08T071142Z_1442775454_RC2VOH95XAFN_RTRMADP_3_USA-ELECTION-KANYE-WEST_2020_07_09_05_53_34.JPG', 'kanye west');
-
+  header = createImg('assets/myHeader.jpg', 'its a header!');
+  eugenia = createP('Eugenia Cooney dies in armed robbery');
+  drugs = createP("Teenagers are using a new drug that allows them to 'See God'");
+  euphoria = createP('Euphoria creators declare that cellular mitosis is a hoax and will be incorporating that belief into all further episodes');
+  gecs = createP('Dylan Brady of 100 gecs dies at age 31 due to heart failure');
+  christianity = createP('Chance The Rapper denounces Christianity after marrying into the royal family');
+  cryptocussy = createP("New element found near Area 51 scientists are calling 'Cryptocussy'");
+  missouri = createP('Missouri legalizes marraige between immediate family');
+  government = createP('US. Government bans physical contact until further notice');
+  stinky = createP('New studies find that hypnosis can be used to eliminate body odor');
+  dragons = createP('Lead singer of Imagine Dragons arrested for child pornography');
+  brady = createP('Formerly retired NBA quarterback Tom Brady is now working as a middle school art teacher');
+  gay = createP('Historians find evidence to support that founder of Scientology was gay');
+  kanye = createP('President Kanye West declares that America is under Martial Law until his new album is released');
 }
+
 function setup() {
-  createCanvas(825, 1500);
+
+  img1.parent('row1');
+  img4.parent('row3');
+  img5.parent('row1');
+  img6.parent('row1');
+  img7.parent('row3');
+  img8.parent('row3');
+  img9.parent('row5');
+  img10.parent('row5');
+  img11.parent('row7');
+  img12.parent('row9');
+  img13.parent('row7');
+  img14.parent('row9');
+  img15.parent('row9');
+  header.parent('header');
+  img1.size(400, 300);
+  img5.size(400, 300);
+  img6.size(400, 300);
+  eugenia.parent('row2');
+  drugs.parent('row2');
+  euphoria.parent('row2');
+  img4.size(400, 300);
+  img7.size(400, 300);
+  img8.size(400, 300);
+  gecs.parent('row4');
+  christianity.parent('row4');
+  cryptocussy.parent('row4');
+  img9.size(400, 300);
+  img10.size(400, 300);
+  missouri.parent('row6');
+  government.parent('row6');
+  img11.size(400, 300);
+  img13.size(400, 300);
+  stinky.parent('row8');
+  dragons.parent('row8');
+  img12.size(400, 300);
+  img14.size(400, 300);
+  img15.size(400, 300);
+  brady.parent('row10');
+  gay.parent('row10');
+  kanye.parent('row10');
 }
+
 function draw() {
-    background(178,190,181);
-
-// stripe
-  noStroke();
-  fill(0);
-  rect(25, 30, 775, 182);
-
-// heading
-  fill(300);
-  textFont('times new roman', 58);
-  text('TALLY', 35, 90);
-  text('DESK', 110, 140);
-  text('NEWSLETTER', 175, 190);
-  fill(245,208,0);
-  textFont('script mt', 30);
-  text('premium edition', 580, 60);
-
-// borders
-  noStroke(0);
-  fill(0);
-  rect(25, 120, 25, 1350);
-  rect(775, 120, 25, 1350);
-  rect(25, 1440, 775, 30);
-  img2.position(555, 40);
-  img2.size(20, 20);
-  img3.position(775, 40);
-  img3.size(20, 20);
-
-// prince philip
-  stroke(300);
-  fill(300);
-  rect(60, 225, 280, 290);
-  noStroke(0);
-  textFont('calibri', 22);
-  fill(0);
-  text("Prince Philip dies after drinking McDonald's Sprite", 80, 455, 250);
-  img1.position(75, 240);
-  img1.size(250, 200);
-
-// euphoria
-  stroke(300);
-  fill(300);
-  rect(350, 225, 250, 290);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 19);
-  text('Euphoria creators declare that cellular mitosis is a hoax and will be incorporating that belief into all further episodes', 370, 395, 230);
-  img6.position(365, 240);
-  img6.size(220, 150);
-
-// god drug
-  stroke(300);
-  fill(300);
-  rect(610, 225, 155, 190);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 20);
-  text("Teenagers are using a new drug that allows them to 'See God'", 620, 315, 150);
-  img5.position(625, 240);
-  img5.size(125, 70);
-
-// chance the rapper
-  stroke(300);
-  fill(300);
-  rect(60, 525, 230, 310);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 20);
-  text('Chance The Rapper denounces Christianity after marrying into the royal family', 75, 730, 230);
-  img7.position(75, 540);
-  img7.size(200, 180);
-
-// cryptocussy
-  stroke(300);
-  fill(300);
-  rect(300, 525, 300, 185);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 20);
-  text("New element found near Area 51 scientists are calling 'Cryptocussy'", 315, 650, 300);
-  img8.position(315, 540);
-  img8.size(270, 100);
-
-// 100 gecs
-  stroke(300);
-  fill(300);
-  rect(610, 425, 155, 285);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 20);
-  text('Dylan Brady of 100 gecs dies at age 31 due to heart failure', 620, 600, 150);
-  img4.position(625, 440);
-  img4.size(125, 150);
-
-// missouri
-  stroke(300);
-  fill(300);
-  rect(300, 720, 465, 250);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 20);
-  text('Missouri legalizes marraige between immediate family', 310, 945, 450);
-  img9.position(315, 735);
-  img9.size(435, 200);
-
-//  government
-  stroke(300);
-  fill(300);
-  rect(60, 845, 230, 210);
-  noStroke();
-  fill(0);
-  textFont('calibri', 22);
-  text('US. Government bans physical contact until further notice', 75, 970, 200);
-  img10.position(75, 860);
-  img10.size(200, 100);
-
-// stinky
-  stroke(300);
-  fill(300);
-  rect(300, 980, 200, 200);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 19);
-  text('New studies find that hypnosis can be used to eliminate body odor', 310, 1100, 190);
-  img11.position(315, 995);
-  img11.size(170, 100);
-
-// tom brady
-  stroke(300);
-  fill(300);
-  rect(60, 1065, 230, 365);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 25);
-  text('Formerly retired NBA quarterback Tom Brady is now working as a middle school art teacher', 75, 1240, 200);
-  img12.position(75, 1080);
-  img12.size(200, 150);
-
-// imagine dragons
-  stroke(300);
-  fill(300);
-  rect(510, 980, 255, 200);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 20);
-  text('Lead singer of Imagine Dragons arrested for child pornography', 525, 1105, 250);
-  img13.position(525, 995);
-  img13.size(225, 100);
-
-// scientology
-  stroke(300);
-  fill(300);
-  rect(300, 1190, 265, 240);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 19);
-  text('Historians find evidence to support that founder of Scientology was gay', 320, 1360, 250);
-  img14.position(315, 1205);
-  img14.size(235, 150);
-
-// kanye west
-  stroke(300);
-  fill(300);
-  rect(575, 1190, 190, 240);
-  noStroke(0);
-  fill(0);
-  textFont('calibri', 17);
-  text('President Kanye West declares that America is under Marshal Law until his new album is released', 585, 1340, 190);
-  img15.position(585, 1205);
-  img15.size(170, 130);
 }
